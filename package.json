@@ -1,7 +1,7 @@
 {
   "name": "peachtreelightscapes",
   "version": "1.0.0",
-  "description": "Peachtree Lightscapes website",
+  "description": "L&L Outdoor Lighting website",
   "main": "index.js",
   "engines": {
     "node": ">=14"

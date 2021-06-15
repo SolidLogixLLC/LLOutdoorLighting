@@ -1,6 +1,8 @@
 {% extends '_layout.html' %} {% set page_title = 'contact' %} {% block
 custom_title %}
-<title>Peachtree Lightscapes Contact Information | Spectacular Landscape Lighting</title>
+<title>
+  L&L Outdoor Lighting Contact Information | Spectacular Landscape Lighting
+</title>
 {% endblock %} {% block content %}
 <main role="main">
   <!-- Breadcrumb Area -->
@@ -37,29 +39,34 @@ custom_title %}
               <div class="contact-inner">
                 <i class="las la-map-marker"></i>
                 <h6>Snail Mail</h6>
-                <p>1992 GA-54 W<br/>Peachtree City, GA 30269</p>
+                <p>1992 GA-54 W<br />Morrisville, NC 27560</p>
               </div>
               <div class="contact-inner">
                 <i class="las la-envelope"></i>
                 <h6>Email Address</h6>
-                <p>info@peachtreelightscapes.com</p>
+                <p>sales@lloutdoorlighting.com</p>
               </div>
               <div class="contact-inner">
                 <i class="las la-phone"></i>
                 <h6>Call or Text</h6>
-                <p>‪‪(404) 946-8250‬</p>
+                <p>‪‪ (919) 374-8344</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-12 wow fadeInRight">
           <div class="contact-form">
-            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify-recaptcha="true"
+              data-netlify="true"
+            >
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
-                  <label for="name" class="visually-hidden" >Name:</label>
+                  <label for="name" class="visually-hidden">Name:</label>
                   <input
-                  name="name"
+                    name="name"
                     type="text"
                     placeholder="Your Name"
                     id="name"
@@ -67,7 +74,7 @@ custom_title %}
                   />
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                  <label for="email" class="visually-hidden" >Email:</label>
+                  <label for="email" class="visually-hidden">Email:</label>
                   <input
                     type="email"
                     name="email"
@@ -77,12 +84,24 @@ custom_title %}
                   />
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                  <label for="tel" class="visually-hidden" >Phone number:</label>
-                  <input type="tel" id="tel" placeholder="Phone Number" required name="phone-number"/>
+                  <label for="tel" class="visually-hidden">Phone number:</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    placeholder="Phone Number"
+                    required
+                    name="phone-number"
+                  />
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                   <label for="subject" class="visually-hidden">Subject:</label>
-                  <input type="text" placeholder="Subject" id="subject" required name="subject"/>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    id="subject"
+                    required
+                    name="subject"
+                  />
                 </div>
                 <div class="col-lg-12">
                   <label for="message" class="visually-hidden">Message:</label>
@@ -96,9 +115,19 @@ custom_title %}
                   ></textarea>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-								<div class="g-recaptcha"  data-sitekey="6LcONUoaAAAAAImt_sLs-TAmaWYOy7Fsgn59axoF" data-callback="recaptchaCallbackContactForm"></div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LcONUoaAAAAAImt_sLs-TAmaWYOy7Fsgn59axoF"
+                    data-callback="recaptchaCallbackContactForm"
+                  ></div>
 
-                  <button type="submit" class="main-btn" name="submit" id="contact-form-submit-button" disabled>
+                  <button
+                    type="submit"
+                    class="main-btn"
+                    name="submit"
+                    id="contact-form-submit-button"
+                    disabled
+                  >
                     Submit
                   </button>
                 </div>

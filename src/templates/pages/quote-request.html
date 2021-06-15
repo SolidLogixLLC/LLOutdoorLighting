@@ -1,0 +1,112 @@
+{% extends '_layout.html' %}
+{% set page_title = 'request-quote' %}
+{% block content
+%}
+<main role="main">
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcroumb-area breadcroumb-area-contactus bread-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcroumb-title text-center">
+                        <h1>Request a Quote</h1>
+                        <h5><a title="Home" href="/">Home</a> / Request a Quote</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="contact-section section-padding">
+        <div class="container custom-container">
+            <div id="map-container" class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12 wow fadeInLeft">
+                    <div class="contact-form">
+                        <div class="section-title"></div>
+                        <h6>Get A Free Quote</h6>
+                        <h2 class="mb-4">Request a Quote</h2>
+                    </div>
+                    <form name="request-for-quote" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label for="quote-name" class="visually-hidden">Name:</label>
+                                <input name="quote-name" type="text" placeholder="Your Name" id="quote-name" required autocomplete="off"/>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label for="quote-email" class="visually-hidden">Email:</label>
+                                <input type="email" name="quote-email" placeholder="E-mail" id="quote-email" required autocomplete="off"/>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label for="quote-phone" class="visually-hidden">Phone Number:</label>
+                                <input type="phone" name="quote-phone" placeholder="Phone Number" id="quote-phone" required autocomplete="off"/>
+                            </div>
+                            <div class="col-6 col-md-6 col-12">
+                                <label for="quote-select" class="visually-hidden">How did you hear about us?</label>
+                                <select name="quote-select" id="quote-select" required>
+                                    <option disabled selected >How did you hear about us?</option>
+                                    <option value="Google Search">Google Search</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Friend">Friend</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Flyer">Flyer</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="quote-message" class="visually-hidden">Message:</label>
+                                <textarea name="quote-message" id="quote-message" cols="30" rows="10" required placeholder="Tell us what you have in mind"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="search-address" class="form-label visually-hidden">Address 1</label>
+                                <input list="search-address-list" id="search-address" placeholder="Address 1" autocomplete="off" required name="search-address">
+                                <datalist id="search-address-list"></datalist>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="quote-address2" class="visually-hidden">Address 2</label>
+                                <input type="text" id="quote-address2" placeholder="Address 2" autocomplete="off" name="quote-address2">
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label class="visually-hidden" for="quote-city">City</label>
+                                <input type="text" id="quote-city" placeholder="City" required autocomplete="off" name="quote-city">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label class="visually-hidden" for="quote-state">State</label>
+                                <input type="text" id="quote-state" placeholder="State" required autocomplete="off" name="quote-state">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <label class="visually-hidden" for="quote-zip">Zip</label>
+                                <input type="text" id="quote-zip" placeholder="Zip" required autocomplete="off" name="quote-zip">
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="g-recaptcha"  data-sitekey="6LcONUoaAAAAAImt_sLs-TAmaWYOy7Fsgn59axoF" data-callback="recaptchaCallbackQuoteRequestForm"></div>
+                                <button type="submit" class="main-btn" name="submit" id="quote-request-form-submit-button" disabled>
+                                    Submit
+                                </button>
+                                <!-- <button type="submit" class="main-btn" id="check-on-map-address"
+                                    name="check-on-map-address">
+                                    Check Address on the Map
+                                </button> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 wow fadeInRight">
+                    <div id="placeholder-text" class="text-center d-none d-lg-block" style="height: 100%;">
+                        <i class="las la-map-marked"></i>
+                        <p>Please type in your address in the form</p>
+                    </div>
+                    <div id="map-quote"></div>
+                    <div id="pano-quote"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+{% endblock content %}

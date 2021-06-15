@@ -1,0 +1,190 @@
+// Include you custom style rules...
+
+// img[alt=""],
+// img:not([alt]),
+// a[title=""],
+// a:not([title]) {
+//   border: 5px dashed #c00;
+// }
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+body,
+html {
+  height: auto;
+}
+
+#style-3.header-area {
+  // .sticky-area {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  // }
+}
+
+// header navbar non active link to change color on hover
+#style-3.header-area {
+  .main-menu {
+    .navbar-nav {
+      .nav-link {
+        &:hover {
+          color: #dfb163;
+        }
+      }
+    }
+  }
+}
+
+.bread-crumb-space {
+  margin-right: 10px;
+}
+
+.auto-container {
+  padding: 0;
+}
+
+.info-content {
+  border-left: 0;
+}
+
+.intro-area {
+  padding-top: 60px;
+
+  .intro-wrapper {
+    margin-top: 0;
+  }
+}
+
+.custom-p {
+  padding-bottom: 85px;
+}
+
+.testimonial-area-2 {
+  height: auto;
+
+  &.section-padding {
+    padding-bottom: 10px;
+  }
+}
+
+button[type='submit']:disabled {
+  background: #c1c1c1;
+
+  &:hover {
+    background: #c1c1c1;
+    color: white;
+  }
+}
+
+#map-quote {
+  position: relative;
+  overflow: hidden;
+}
+
+#pano-quote {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(229, 227, 223);
+}
+
+@media only screen and (max-width: 767px) {
+  .header-area {
+    .navigation {
+      padding: 0 15px;
+    }
+  }
+}
+
+#placeholder-text {
+  .las {
+    font-size: 75px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-content {
+    border-left: 10px solid #dfb163;
+  }
+  .info-bg {
+    &.bg-cover {
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  #about-3 {
+    .about-bg {
+      &::before {
+        left: 120px;
+        right: 120px;
+      }
+    }
+  }
+  .testimonial-area-2 {
+    &.section-padding {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-area {
+    padding-top: 0;
+
+    .intro-wrapper {
+      margin-top: -80px;
+    }
+  }
+  #about-3 {
+    .about-bg {
+      &::before {
+        left: 80px;
+        right: 80px;
+      }
+    }
+  }
+  .testimonial-area-2 {
+    &.section-padding {
+      padding-bottom: 40px;
+    }
+  }
+  #pre-footer {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-area {
+    .intro-wrapper {
+      margin-top: -100px;
+    }
+  }
+  .custom-container {
+    max-width: 80%;
+  }
+}
+.alert {
+  background-color: #dfb163;
+  color: #252531;
+  border: none;
+  border-radius: 0px;
+}

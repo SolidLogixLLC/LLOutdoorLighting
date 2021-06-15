@@ -1,0 +1,94 @@
+<!-- Header Area -->
+
+{% set navItems = [
+{
+name: 'home',
+url: '/',
+description: 'Home'
+},
+{
+name: 'services',
+url: '/services.html',
+description: 'Services'
+},
+{
+name: 'lighting-tips',
+url: '/articles.html',
+description: 'Lighting Tips'
+},
+{
+name: 'our-work',
+url: '/our-work.html',
+description: 'Our Work'
+},
+{
+name: 'about',
+url: 'about.html',
+description: 'About Us'
+},
+{
+name: 'contact',
+url: 'contact.html',
+description: 'Contact Us'
+},
+{
+name: 'request-quote',
+url: 'quote-request.html',
+description: 'Request Quote',
+mobileOnly: true
+}
+]
+%}
+
+<div id="style-3" class="header-area">
+  
+  <div class="sticky-area">
+    <div class="navigation">
+      <div class="auto-container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a title="Home" href="/"><img src="/assets/img/peachtree_hlogo.png" alt="Peachtree Lightscapes logo"
+                  style="max-height: 63px" /></a>
+              <!--If you use text logo instead of img logo-->
+              <!--<a class="navbar-brand" href="index.html"><b>ARCHI</b>PIX</a>-->
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="main-menu">
+              <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                    {% for item in navItems %}
+                    <li {% if item.mobileOnly %} class="nav-item d-lg-none" {% else %} class="nav-item" {% endif %}>
+                      <a title="{{ item.description }}" {% if page_title==item.name %} class="nav-link active" {% else
+                        %} class="nav-link" {% endif %} href="{{ item.url }}">
+                        {{ item.description }}
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2 text-right">
+            <div class="header-right-content">
+              <a href="quote-request.html">
+                <div class="header-btn main-btn">Quote Request</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+{% extends '_layout.html' %} {% set page_title = 'contact' %} {% block
+custom_title %}
+<title>Peachtree Lightscapes Contact Information | Spectacular Landscape Lighting</title>
+{% endblock %} {% block content %}
+<main role="main">
+  <!-- Breadcrumb Area -->
+
+  <div class="breadcroumb-area breadcroumb-area-contactus bread-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcroumb-title text-center">
+            <h1>Contact Us</h1>
+            <h5><a title="Home" href="/">Home</a> / Contact Us</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+
+  <div class="contact-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft">
+          <div class="contact-info">
+            <div class="section-title">
+              <h6>Contact Us</h6>
+              <h2>Get in <b>Touch</b></h2>
+            </div>
+            <p>
+              Got a question for us? We are here for you! Shoot us a message and
+              we'll get back to you soon!
+            </p>
+            <div class="contact-content">
+              <div class="contact-inner">
+                <i class="las la-map-marker"></i>
+                <h6>Snail Mail</h6>
+                <p>1992 GA-54 W<br/>Peachtree City, GA 30269</p>
+              </div>
+              <div class="contact-inner">
+                <i class="las la-envelope"></i>
+                <h6>Email Address</h6>
+                <p>info@peachtreelightscapes.com</p>
+              </div>
+              <div class="contact-inner">
+                <i class="las la-phone"></i>
+                <h6>Call or Text</h6>
+                <p>‪‪(404) 946-8250‬</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 wow fadeInRight">
+          <div class="contact-form">
+            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <label for="name" class="visually-hidden" >Name:</label>
+                  <input
+                  name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <label for="email" class="visually-hidden" >Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <label for="tel" class="visually-hidden" >Phone number:</label>
+                  <input type="tel" id="tel" placeholder="Phone Number" required name="phone-number"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <label for="subject" class="visually-hidden">Subject:</label>
+                  <input type="text" placeholder="Subject" id="subject" required name="subject"/>
+                </div>
+                <div class="col-lg-12">
+                  <label for="message" class="visually-hidden">Message:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    required
+                    placeholder="Write Message"
+                  ></textarea>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+								<div class="g-recaptcha"  data-sitekey="6LcONUoaAAAAAImt_sLs-TAmaWYOy7Fsgn59axoF" data-callback="recaptchaCallbackContactForm"></div>
+
+                  <button type="submit" class="main-btn" name="submit" id="contact-form-submit-button" disabled>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock content %}

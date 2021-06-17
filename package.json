@@ -1,5 +1,5 @@
 {
-  "name": "peachtreelightscapes",
+  "name": "lloutdoorlighting",
   "version": "1.0.0",
   "description": "L&L Outdoor Lighting website",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SolidLogixLLC/PeachtreeLightscapes.git"
+    "url": "git+https://github.com/SolidLogixLLC/LLOutdoorLighting.git"
   },
   "keywords": [
     "html",
@@ -22,9 +22,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SolidLogixLLC/PeachtreeLightscapes/issues"
+    "url": "https://github.com/SolidLogixLLC/LLOutdoorLighting/issues"
   },
-  "homepage": "https://github.com/SolidLogixLLC/PeachtreeLightscapes#readme",
+  "homepage": "https://github.com/SolidLogixLLC/LLOutdoorLighting#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

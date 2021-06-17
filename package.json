@@ -1,7 +1,7 @@
 {
   "name": "lloutdoorlighting",
   "version": "1.0.0",
-  "description": "L&L Outdoor Lighting website",
+  "description": "L&L Outdoor Lighting Co. Co. website",
   "main": "index.js",
   "engines": {
     "node": ">=14"

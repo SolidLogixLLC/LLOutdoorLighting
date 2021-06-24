@@ -5,8 +5,8 @@ import { Loader } from "@googlemaps/js-api-loader";
 
 // This is the loader from the google sdk api
 const loader = new Loader({
-  apiKey: "AIzaSyAtX6_7dXbMVatPvsXef4906IezRlggkM4",
-  version: "weekly",
+  apiKey: 'AIzaSyDVN9bU9ZU-msfx2CTimBcFTHUjsU9GS8Q',
+  version: 'weekly',
 });
 
 let globalAddreses = [];

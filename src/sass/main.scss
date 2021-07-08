@@ -120,6 +120,21 @@ button[type='submit']:disabled {
   }
 }
 
+.single-service {
+  img {
+    display: block;
+    margin: auto;
+    width: 65%;
+  }
+  .service-content {
+    left: calc(50% - 110px);
+    width: 62%;
+    right: 0;
+    padding: 8px 20px;
+
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .header-area {
     .navigation {
@@ -161,6 +176,17 @@ button[type='submit']:disabled {
   .testimonial-area-2 {
     &.section-padding {
       padding-bottom: 20px;
+    }
+  }
+  .single-service {
+    img {
+      width: 100%;
+    }
+    .service-content {
+      width: auto;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
     }
   }
 }

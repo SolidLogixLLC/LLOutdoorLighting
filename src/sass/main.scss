@@ -166,6 +166,15 @@ button[type='submit']:disabled {
 }
 
 @media (min-width: 992px) {
+  .main-menu li.nav-item {
+    margin-right: 22px;
+  }
+  .header-right-content {
+    margin-left: -15px;
+    .main-btn {
+      font-size: 14px;
+    }
+  }
   .intro-area {
     padding-top: 0;
 
@@ -199,6 +208,15 @@ button[type='submit']:disabled {
 }
 
 @media (min-width: 1200px) {
+  .main-menu li.nav-item {
+    margin-right: 40px;
+  }
+  .header-right-content {
+    margin-left: -15px;
+    .main-btn {
+      font-size: 18px;
+    }
+  }
   .intro-area {
     .intro-wrapper {
       margin-top: -100px;

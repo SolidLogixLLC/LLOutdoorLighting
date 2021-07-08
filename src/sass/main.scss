@@ -12,7 +12,7 @@
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
-.visually-hidden {
+ .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -127,9 +127,9 @@ button[type='submit']:disabled {
     width: 65%;
   }
   .service-content {
-    left: calc(50% - 110px);
+    left: auto;
     width: 62%;
-    right: 0;
+    right: auto;
     padding: 8px 20px;
 
   }
@@ -183,9 +183,7 @@ button[type='submit']:disabled {
       width: 100%;
     }
     .service-content {
-      width: auto;
-      left: 20px;
-      right: 20px;
+      width: 90%;
       padding: 20px;
     }
   }

@@ -121,10 +121,15 @@ button[type='submit']:disabled {
 }
 
 .single-service {
+  .service-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 237px;
+    width: 100%;
+  }
   img {
-    display: block;
-    margin: auto;
-    width: 65%;
+    display: none;
   }
   .service-content {
     left: auto;
@@ -153,6 +158,16 @@ button[type='submit']:disabled {
   }
 }
 
+@media (min-width: 576px) {
+  .single-service {
+    .service-bg {
+      height: 370px;
+      &.deck {
+        height: 298px;
+      }
+    }
+  }
+}
 @media (min-width: 768px) {
   .info-content {
     border-left: 10px solid #dfb163;
@@ -179,7 +194,15 @@ button[type='submit']:disabled {
     }
   }
   .single-service {
+    .service-bg {
+      background-image: none !important;
+      height: auto;
+      &.deck {
+        height: auto;
+      }
+    }
     img {
+      display: block;
       width: 100%;
     }
     .service-content {

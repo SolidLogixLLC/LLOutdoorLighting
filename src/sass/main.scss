@@ -125,7 +125,7 @@ button[type='submit']:disabled {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 237px;
+    height: 250px;
     width: 100%;
   }
   img {
@@ -162,9 +162,9 @@ button[type='submit']:disabled {
   .single-service {
     .service-bg {
       height: 370px;
-      &.deck {
-        height: 298px;
-      }
+    }
+    .service-content {
+      bottom: 5px;
     }
   }
 }
@@ -197,15 +197,13 @@ button[type='submit']:disabled {
     .service-bg {
       background-image: none !important;
       height: auto;
-      &.deck {
-        height: auto;
-      }
     }
     img {
       display: block;
       width: 100%;
     }
     .service-content {
+      bottom: -20px;
       width: 90%;
       padding: 20px;
     }

@@ -249,6 +249,11 @@ button[type='submit']:disabled {
       }
     }
   }
+  #blog-2 {
+    .single-blog {
+      margin-bottom: 100px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

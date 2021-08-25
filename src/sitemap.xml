@@ -2,8 +2,68 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc></loc>
-	<lastmod>2021-01-10T06:34:30+01:00</lastmod>
+	<loc>https://www.lloutdoorlighting.com/</loc>
+	<lastmod>2021-08-25T05:16:28+01:00</lastmod>
 	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/services.html</loc>
+	<lastmod>2021-08-25T05:16:29+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles.html</loc>
+	<lastmod>2021-08-25T05:16:32+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/our-work.html</loc>
+	<lastmod>2021-08-25T05:16:32+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/about.html</loc>
+	<lastmod>2021-08-25T05:16:32+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/contact.html</loc>
+	<lastmod>2021-08-25T05:16:33+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/quote-request.html</loc>
+	<lastmod>2021-08-25T05:16:35+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/index.html</loc>
+	<lastmod>2021-08-25T05:16:33+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles/diy.html</loc>
+	<lastmod>2021-08-25T05:16:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles/led-lighting-benefits.html</loc>
+	<lastmod>2021-08-25T05:16:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles/home-automation.html</loc>
+	<lastmod>2021-08-25T05:16:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles/dream-backyard-oasis.html</loc>
+	<lastmod>2021-08-25T05:16:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.lloutdoorlighting.com/articles/index.html</loc>
+	<lastmod>2021-08-25T05:16:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 </urlset>

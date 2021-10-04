@@ -7,7 +7,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const TEMPLATE_DIRS = "./src/templates/pages";
 const ARTICLES_DIR = "./src/templates/articles";
-const isDevelopment = process.env.NODE_ENV !== "production";
+const LOCATIONS_DIR = './src/templates/locations';
+const isDevelopment = process.env.NODE_ENV !== 'production';
 
 /**
  * Get all path in directory including subdirectories
@@ -29,8 +30,8 @@ function returnEntries(globPath) {
  * Return an an array of HtmlWebpack plugins for each file under the `templateDir` directory
  *
  * @param   {string}  templateDir  The path to all the pages to be created
- * 
- * @param {string}    nestedFolder Name of an extra folder if it's needed 
+ *
+ * @param {string}    nestedFolder Name of an extra folder if it's needed
  *
  * @return  {Array}               Array of HtmlWebpack plugin
  */
@@ -39,7 +40,7 @@ function generateHtmlPlugins(templateDir, nestedFolder) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   return templateFiles.map((item) => {
     // Split names and extension
-    const [name, extension] = item.split(".");
+    const [name, extension] = item.split('.');
     // Create new HTMLWebpackPlugin with options
 
     const pathToFile = `${templateDir}/${name}.${extension}`;
@@ -52,7 +53,11 @@ function generateHtmlPlugins(templateDir, nestedFolder) {
 }
 
 // Call our function on our views directory.
-const htmlPlugins = [...generateHtmlPlugins(TEMPLATE_DIRS), ...generateHtmlPlugins(ARTICLES_DIR, "articles")];
+const htmlPlugins = [
+  ...generateHtmlPlugins(TEMPLATE_DIRS),
+  ...generateHtmlPlugins(ARTICLES_DIR, 'articles'),
+  ...generateHtmlPlugins(LOCATIONS_DIR, 'locations'),
+];
 
 
 module.exports = {

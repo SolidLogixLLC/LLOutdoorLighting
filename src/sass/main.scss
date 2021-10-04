@@ -140,6 +140,23 @@ button[type='submit']:disabled {
   }
 }
 
+.section-title {
+  h2.side-title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  p > a {
+    color: #dfb163;
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+  p.zip {
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .header-area {
     .navigation {
@@ -155,6 +172,20 @@ button[type='submit']:disabled {
   p {
     font-size: 18px;
     font-weight: 600;
+  }
+}
+
+#locations {
+  li {
+    font-size: 18px;
+    > a {
+      font-size: 18px;
+
+      &:hover, &:focus, &:active {
+        text-decoration: underline;
+        color: #dfb163;
+      }
+    }
   }
 }
 
@@ -206,7 +237,11 @@ button[type='submit']:disabled {
 
 @media (min-width: 992px) {
   .main-menu li.nav-item {
-    margin-right: 22px;
+    margin-right: 12px;
+
+    > .nav-link {
+      font-size: 15px;
+    }
   }
   .header-right-content {
     margin-left: -15px;
@@ -258,7 +293,11 @@ button[type='submit']:disabled {
 
 @media (min-width: 1200px) {
   .main-menu li.nav-item {
-    margin-right: 40px;
+    margin-right: 25px;
+
+    > .nav-link {
+      font-size: 16px;
+    }
   }
   .header-right-content {
     margin-left: -15px;

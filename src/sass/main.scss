@@ -140,6 +140,23 @@ button[type='submit']:disabled {
   }
 }
 
+.section-title {
+  h2.side-title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  p > a {
+    color: #dfb163;
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+  p.zip {
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .header-area {
     .navigation {

@@ -157,14 +157,6 @@ button[type='submit']:disabled {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .header-area {
-    .navigation {
-      padding: 0 15px;
-    }
-  }
-}
-
 #placeholder-text {
   .las {
     font-size: 75px;
@@ -185,6 +177,30 @@ button[type='submit']:disabled {
         text-decoration: underline;
         color: #dfb163;
       }
+    }
+  }
+}
+
+.recent-jobs {
+  .owl-item img {
+    border-radius: 10px;
+  }
+  .single-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-area {
+    .navigation {
+      padding: 0 15px;
     }
   }
 }

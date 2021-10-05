@@ -27,12 +27,12 @@
 */
 
 (function ($) {
-  "use strict";
+  ('use strict');
 
   // 01. Mobile Menu
 
-  $(".navbar-toggler").on("click", function () {
-    $(this).toggleClass("active");
+  $('.navbar-toggler').on('click', function () {
+    $(this).toggleClass('active');
   });
 
   // we would not need this rn, we do not have menu subitems
@@ -40,27 +40,27 @@
   //   $(".sub-nav-toggler").removeClass("active");
   // });
 
-  var subMenu = $(".navbar-nav .sub-menu");
+  var subMenu = $('.navbar-nav .sub-menu');
 
   if (subMenu.length) {
     subMenu
-      .parent("li")
-      .children("a")
+      .parent('li')
+      .children('a')
       .append(function () {
         return '<button class="sub-nav-toggler"> <i class="fa fa-angle-down"></i> </button>';
       });
 
-    var subMenuToggler = $(".navbar-nav .sub-nav-toggler");
+    var subMenuToggler = $('.navbar-nav .sub-nav-toggler');
 
-    subMenuToggler.on("click", function () {
-      $(this).parent().parent().children(".sub-menu").slideToggle();
+    subMenuToggler.on('click', function () {
+      $(this).parent().parent().children('.sub-menu').slideToggle();
       return false;
     });
   }
 
   //Hero Area Slider
 
-  $(".homepage-slides").owlCarousel({
+  $('.homepage-slides').owlCarousel({
     items: 1,
     dots: false,
     nav: true,
@@ -69,10 +69,7 @@
     autoplayTimeout: 5000,
     smartSpeed: 2000,
     slideSpeed: 600,
-    navText: [
-      "<i class='la la-angle-left'></i>",
-      "<i class='la la-angle-right'></i>",
-    ],
+    navText: ["<i class='la la-angle-left'></i>", "<i class='la la-angle-right'></i>"],
     responsive: {
       0: {
         items: 1,
@@ -113,7 +110,41 @@
 
   // Testimonial Carousel # 01
 
-  $(".team-carousel").owlCarousel({
+  $('.team-carousel').owlCarousel({
+    items: 1,
+    margin: 30,
+    dots: true,
+    nav: false,
+    loop: true,
+    autoplay: true,
+    smartSpeed: 700,
+    responsiveClass: true,
+    responsive: {
+      575: {
+        items: 1,
+        nav: false,
+        dots: false,
+      },
+
+      767: {
+        items: 2,
+        nav: false,
+      },
+
+      990: {
+        items: 2,
+        loop: true,
+      },
+      1200: {
+        items: 3,
+        dots: true,
+        loop: true,
+      },
+    },
+  });
+
+  // Recent Jobs Carousel
+  $('.recent-jobs').owlCarousel({
     items: 1,
     margin: 30,
     dots: true,
@@ -148,7 +179,7 @@
 
   // Testimonial Carousel # 02
 
-  $(".testimonial-carousel").owlCarousel({
+  $('.testimonial-carousel').owlCarousel({
     items: 1,
     margin: 30,
     dots: true,
@@ -183,7 +214,7 @@
   });
 
   // Service Slider
-  $(".service-slider").owlCarousel({
+  $('.service-slider').owlCarousel({
     loop: true,
     items: 1,
     dots: true,
@@ -220,7 +251,7 @@
   });
 
   // Project Slider
-  $(".project-slider").owlCarousel({
+  $('.project-slider').owlCarousel({
     loop: true,
     items: 1,
     dots: false,
@@ -232,10 +263,7 @@
     margin: 30,
     autoplay: true,
     slideSpeed: 600,
-    navText: [
-      "<i class='las la-arrow-left'></i>",
-      "<i class='las la-arrow-right'></i>",
-    ],
+    navText: ["<i class='las la-arrow-left'></i>", "<i class='las la-arrow-right'></i>"],
     responsive: {
       0: {
         items: 1,
@@ -261,7 +289,7 @@
   });
 
   // Clients Slider
-  $("#clients-slider").owlCarousel({
+  $('#clients-slider').owlCarousel({
     loop: true,
     items: 5,
     dots: false,
@@ -299,14 +327,14 @@
 
   //Isotope Filter
 
-  $(".port-menu li").on("click", function () {
-    var selector = $(this).attr("data-filter");
+  $('.port-menu li').on('click', function () {
+    var selector = $(this).attr('data-filter');
 
-    $(".port-menu li").removeClass("active");
+    $('.port-menu li').removeClass('active');
 
-    $(this).addClass("active");
+    $(this).addClass('active');
 
-    $(".portfolio-list").isotope({
+    $('.portfolio-list').isotope({
       filter: selector,
       percentPosition: true,
     });
@@ -314,7 +342,7 @@
 
   //Counter Up
 
-  $(".counter-number span").counterUp({
+  $('.counter-number span').counterUp({
     delay: 10,
     time: 1000,
   });
@@ -331,23 +359,23 @@
   // SCROLLTO THE TOP
 
   // Show or hide the sticky footer button
-  $(window).on("scroll", function () {
+  $(window).on('scroll', function () {
     if ($(this).scrollTop() > 6000) {
-      $(".go-top").fadeIn(200);
+      $('.go-top').fadeIn(200);
     } else {
-      $(".go-top").fadeOut(200);
+      $('.go-top').fadeOut(200);
     }
   });
 
   // Animate the scroll to top
-  $(".go-top").on("click", function (event) {
+  $('.go-top').on('click', function (event) {
     event.preventDefault();
 
-    $("html, body").animate(
+    $('html, body').animate(
       {
         scrollTop: 0,
       },
-      1500
+      1500,
     );
   });
 
@@ -367,16 +395,16 @@
 
   // Preloader
   setTimeout(function () {
-    $("#loader").fadeOut(200);
+    $('#loader').fadeOut(200);
   }, 200);
 
-  $(window).on("load", function () {
-    $(".portfolio-list").isotope({
-      layoutMode: "masonry",
+  $(window).on('load', function () {
+    $('.portfolio-list').isotope({
+      layoutMode: 'masonry',
     });
   });
 
-  jQuery(window).on("load", function () {
-    jQuery(".site-preloader-wrap, .slide-preloader-wrap").fadeOut(1000);
+  jQuery(window).on('load', function () {
+    jQuery('.site-preloader-wrap, .slide-preloader-wrap').fadeOut(1000);
   });
 })(jQuery);

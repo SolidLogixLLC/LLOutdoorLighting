@@ -175,6 +175,18 @@
     $('#newsletter-form-submit-button').removeAttr('disabled');
   };
 </script>
+<script>
+  let alertMsg = document.getElementById("rebrandingAlert");
+  let dismissed = sessionStorage.getItem("dismissed");
+
+  if (dismissed) {
+      alertMsg.style.display = "none";
+  }
+
+  $('#rebrandingAlert').on('closed.bs.alert', function () {
+      sessionStorage.setItem("dismissed", true);
+  })
+</script>
 
 </body>
 </html>
